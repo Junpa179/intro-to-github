@@ -1,0 +1,48 @@
+#una calculadora de áreas de poligonos
+import math
+print("=================")
+print("Area calculator")
+print("=================")
+
+print("1) Triangle")
+
+print("2) Square")
+
+print("3) Rectangle")
+
+print("4) Circle")
+
+print("5) Skip")
+
+shape = int(input("which shape?(1-5):  "))
+
+if shape == 1:  
+  print("you selected Triangle")  
+  base = float(input("Base: ")) 
+  height = float(input("Height: ")) 
+  area = (base * height) /2 
+  print(f"Your area triangle is {area:.2f}")
+
+
+elif shape == 2:
+  print("You selected Square")
+  side = float(input("Side:  "))
+  square = side ** 2
+  print(f"Your area Square is {square:.2f}")
+
+elif shape == 3:
+  print("You selected Rectangule")
+  base = float(input("Base: "))
+  height = float(input("Height: "))
+  area = base * height
+  print(f"Your Rectangule Area is {area:.2f}")
+
+elif shape == 4:
+  print("You selected circle")
+  radius = float(input("Radius: "))
+  area = (math.pi) * (radius **2) 
+  print(f"Your Circle area is {area:.2f}")
+elif shape == 5:
+  print("Exit")
+else:
+  print("Wrong number")
